@@ -1,5 +1,56 @@
-html{
-    font-size: 16px;
-    background: url('./peoples.jpg');
-    background-size: cover;
+html {
+  font-size: 16px;
+  background: url("./peoples.jpg");
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* layout */
+
+.keys {
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 0%;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* what is min-height and unit vh? */
+}
+
+.key {
+  border: 0.4rem solid #ffe897;
+  border-radius: 0.5rem;
+  margin: 1em;
+  padding: 1em 0.5em;
+  font-size: 1rem;
+  width: 10rem; /* 1rem = 16px */
+  text-align: center;
+  color: #ffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.07s ease; /* read about transition */
+  text-shadow: 0 0 0.5rem black; /* read about text shadow */
+  cursor: pointer;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #e38375;
+  box-shadow: 0 0 1rem #e38375;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
 }
