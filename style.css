@@ -57,17 +57,17 @@ kbd {
 }
 
 @media (max-width: 600px) {
-  .keys{
+  .keys {
     flex-wrap: wrap;
   }
 
   kbd {
     display: block;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
-  
+
   .sound {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     text-transform: uppercase;
     letter-spacing: 0.01rem;
     color: #ffc600;
